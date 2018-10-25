@@ -19,5 +19,5 @@ categories = ["asynchronous"]
 
 [dependencies]
 tokio-io = { version = "0.1.7", path = "../tokio-io" }
-bytes = "0.4.7"
+bytes = {path = "../../bytes"}
 futures = "0.1.18"

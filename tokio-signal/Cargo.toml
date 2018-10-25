@@ -17,7 +17,7 @@ appveyor = { repository = "carllerche/tokio", id = "s83yxhy9qeb58va7" }
 
 [dependencies]
 futures = "0.1.11"
-mio = "0.6.14"
+mio = {path = "../../mio-nonbroken"}
 tokio-reactor = { version = "0.1.0", path = "../tokio-reactor" }
 tokio-executor = { version = "0.1.0", path = "../tokio-executor" }
 tokio-io = { version = "0.1", path = "../tokio-io" }
@@ -31,5 +31,5 @@ signal-hook = "0.1"
 tokio = { version = "0.1.8", path = ".." }
 
 [target.'cfg(windows)'.dependencies.winapi]
-version = "0.3"
+path = "../../winapi-rs"
 features = ["minwindef", "wincon"]

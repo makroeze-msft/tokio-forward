@@ -21,7 +21,7 @@ travis-ci = { repository = "tokio-rs/tokio-tls" }
 
 [dependencies]
 futures = "0.1.23"
-native-tls = "0.2"
+native-tls = {path = "../../rust-native-tls"}
 tokio-io = { version = "0.1.7", path = "../tokio-io" }
 
 [dev-dependencies]
@@ -36,10 +36,10 @@ openssl = "0.10"
 security-framework = "0.2"
 
 [target.'cfg(windows)'.dev-dependencies]
-schannel = "0.1"
+schannel = {path = "../../schannel-rs"}
 
 [target.'cfg(windows)'.dev-dependencies.winapi]
-version = "0.3"
+path = "../../winapi-rs"
 features = [
   "lmcons",
   "basetsd",
